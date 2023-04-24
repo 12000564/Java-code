@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class Solution {
+public static void main(String[] args) {
+Scanner se = new Scanner(System.in);
+
+
+List<String> medicines = new ArrayList<>();
+for (int i = 0; i < 3; i++) {
+String medicine = se.nextLine().trim();
+medicines.add(medicine);
+}
+
+
+Collections.sort(medicines, (s1, s2) -> s1.compareToIgnoreCase(s2));
+
+
+for (String medicine : medicines) {
+System.out.println(medicine);
+}
+}
+}
